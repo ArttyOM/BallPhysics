@@ -1,0 +1,7 @@
+Messenger используется для взаимодействия между модулями посредством сообщений. 
+Messenger.AddListener("Message", MethodName);//слушатель вызывает метод MethodName без аргументов при получении сообщения "Message"
+Messenger<T,M>.AddListener("Message", MethodName);//для случая, когда у MethodName 2 аргумента
+Messenger.Broadcast("Message"); //отправка всем слушателям сообщения "Message"
+Messenger<T,M>.BroadCast("Message", tObject, mObject); //для случая передачи сообщения и параметров
+
+miniJSON используется для работы с JSON-файлами, например, для получения текста или изображений с интернета
